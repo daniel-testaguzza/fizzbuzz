@@ -1,6 +1,12 @@
 class FizzBuzz {
   parse(inputNumber) {
-    return 1;
+    if (inputNumber % 5 === 0) {
+      return "Buzz";
+    }
+    if (inputNumber % 3 === 0) {
+      return "Fizz";
+    }
+    return inputNumber;
   }
 }
 
